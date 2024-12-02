@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* Style général pour la navbar */
+nav {
+    background-color: #333;  /* Couleur de fond sombre */
+    padding: 10px 20px;      /* Espacement interne */
+    text-align: center;      /* Centrer le contenu */
+}
+
+/* Style pour la liste des éléments dans la navbar */
+nav ul {
+    list-style-type: none;  /* Retirer les puces de liste */
+    margin: 0;
+    padding: 0;
+    display: flex;          /* Utiliser flexbox pour aligner les items horizontalement */
+    justify-content: center; /* Centrer les éléments horizontalement */
+}
+
+/* Style pour chaque élément de la liste */
+nav ul li {
+    margin-right: 30px;  /* Espacement entre les liens */
+}
+
+/* Retirer l'espacement du dernier élément */
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Style des liens */
+nav ul li a {
+    color: white;  /* Couleur des liens */
+    text-decoration: none;  /* Retirer la décoration de lien (souligné) */
+    font-family: 'Montserrat', sans-serif; /* Police moderne */
+    font-weight: 600;  /* Mettre en gras les liens */
+    font-size: 16px;    /* Taille de police */
+    transition: color 0.3s ease;  /* Transition pour l'effet de survol */
+}
+
+/* Effet de survol des liens */
+nav ul li a:hover {
+    color: #f39c12; /* Changer la couleur lors du survol */
+}
+
+/* Style pour mobile (responsive design) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Empiler les éléments en colonne sur petits écrans */
+        align-items: center;  /* Centrer les éléments horizontalement */
+    }
+
+    nav ul li {
+        margin-bottom: 15px;  /* Espacement vertical entre les éléments */
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;  /* Retirer l'espacement du dernier élément */
+    }
+}
